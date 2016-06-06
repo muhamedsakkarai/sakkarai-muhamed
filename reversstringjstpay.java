@@ -15,6 +15,9 @@ class Ideone
 		String strcpy="";
 		for(int i=0;i<str.length();i++)
 		{
+			if(i==0)
+			strcpy+=str.charAt(i);
+			else
 			strcpy+="-"+str.charAt(i);
 		}
 		sb.append(strcpy);
